@@ -9,7 +9,7 @@ function submitForm(event) {
     const loadingBanner = document.getElementById("loadingBanner");
     loadingBanner.style.display = "block";
 
-    fetch("https://script.google.com/macros/s/AKfycbxCs9WYBzyiU0L5YrR9j5ygg5a7Ehc76LUfjcf-aib33cnveuvIREh4G9xLm5ClzbWYpA/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbxeMYYjuCjwkPKnO1s1wyPfzeKOwKZWByPow5zP440kfzz1eAlz5Uw81yachoaka2kefQ/exec", {
         method: "POST",
         body: formData  // Send formData directly as body
     })
