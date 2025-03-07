@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSC 2025 | Pendaftaran</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="LOGO.png" type="image/x-icon">
+</head>
+<body>
+
+    <div id="loadingBanner" class="loading-banner" style="display: none;">
+        <p>Loading... Please wait.</p>
+    </div>
+
+    <div class="container">
+	<img src="CS.png" alt="COMING SOON" class="image">
+	<!--<img src="LOGO.png" alt="COMING SOON" class="image2">-->
+        <h1>Pendaftaran FLY SMASH CHAMPIONSHIP</h1>
+        <form id="uploadForm" enctype="multipart/form-data" onsubmit="submitForm(event)">
+            <!-- Single L Participant -->
+	    <label for="name0">Sila masukkan nama pasukan:</label>
+            <input type="text" id="name0" name="name0" placeholder="PEJUANG FIGHTER" required>
+
+            <label for="name1">(Single L) Sila masukkan nama penuh:</label>
+            <input type="text" id="name1" name="name1" placeholder="Single L akan menjadi ketua pasukan" required>
+
+            <label for="matrix1">(Single L) Sila masukkan no matrik:</label>
+            <input type="text" id="matrix1" name="matrix1" placeholder="Single L" required>
+
+            <label for="phone1">(Single L) Sila masukkan no telefon:</label>
+            <input type="phone" id="phone1" name="phone1" placeholder="Single L" required>
+
+            <!-- Single P Participant -->
+            <label for="name2">(Single P) Sila masukkan nama penuh:</label>
+            <input type="text" id="name2" name="name2" placeholder="Single P" required>
+
+            <label for="matrix2">(Single P) Sila masukkan no matrik:</label>
+            <input type="text" id="matrix2" name="matrix2" placeholder="Single P" required>
+
+            <label for="phone2">(Single P) Sila masukkan no telefon:</label>
+            <input type="phone" id="phone2" name="phone2" placeholder="Single P" required>
+
+            <!-- Double L-1 Participant -->
+            <label for="name3">(Double L-1) Sila masukkan nama penuh:</label>
+            <input type="text" id="name3" name="name3" placeholder="Double L-1" required>
+
+            <label for="matrix3">(Double L-1) Sila masukkan no matrik:</label>
+            <input type="text" id="matrix3" name="matrix3" placeholder="Double L-1" required>
+
+            <label for="phone3">(Double L-1) Sila masukkan no telefon:</label>
+            <input type="phone" id="phone3" name="phone3" placeholder="Double L-1" required>
+
+            <!-- Double L-2 Participant -->
+            <label for="name4">(Double L-2) Sila masukkan nama penuh:</label>
+            <input type="text" id="name4" name="name4" placeholder="Double L-2" required>
+
+            <label for="matrix4">(Double L-2) Sila masukkan no matrik:</label>
+            <input type="text" id="matrix4" name="matrix4" placeholder="Double L-2" required>
+
+            <label for="phone4">(Double L-2) Sila masukkan no telefon:</label>
+            <input type="phone" id="phone4" name="phone4" placeholder="Double L-2" required>
+
+            <!-- Double P-1 Participant -->
+            <label for="name5">(Double P-1) Sila masukkan nama penuh:</label>
+            <input type="text" id="name5" name="name5" placeholder="Double P-1" required>
+
+            <label for="matrix5">(Double P-1) Sila masukkan no matrik:</label>
+            <input type="text" id="matrix5" name="matrix5" placeholder="Double P-1" required>
+
+            <label for="phone5">(Double P-1) Sila masukkan no telefon:</label>
+            <input type="phone" id="phone5" name="phone5" placeholder="Double P-1" required>
+
+            <!-- Double P-2 Participant -->
+            <label for="name6">(Double P-2) Sila masukkan nama penuh:</label>
+            <input type="text" id="name6" name="name6" placeholder="Double P-2" required>
+
+            <label for="matrix6">(Double P-2) Sila masukkan no matrik:</label>
+            <input type="text" id="matrix6" name="matrix6" placeholder="Double P-2" required>
+
+            <label for="phone6">(Double P-2) Sila masukkan no telefon:</label>
+            <input type="phone" id="phone6" name="phone6" placeholder="Double P-2" required>
+
+            <!-- Mixed L Participant -->
+            <label for="name7">(Mixed L) Sila masukkan nama penuh:</label>
+            <input type="text" id="name7" name="name7" placeholder="Mixed L" required>
+
+            <label for="matrix7">(Mixed L) Sila masukkan no matrik:</label>
+            <input type="text" id="matrix7" name="matrix7" placeholder="Mixed L" required>
+
+            <label for="phone7">(Mixed L) Sila masukkan no telefon:</label>
+            <input type="phone" id="phone7" name="phone7" placeholder="Mixed L" required>
+
+            <!-- Mixed P Participant -->
+            <label for="name8">(Mixed P) Sila masukkan nama penuh:</label>
+            <input type="text" id="name8" name="name8" placeholder="Mixed P" required>
+
+            <label for="matrix8">(Mixed P) Sila masukkan no matrik:</label>
+            <input type="text" id="matrix8" name="matrix8" placeholder="Mixed P" required>
+
+            <label for="phone8">(Mixed P) Sila masukkan no telefon:</label>
+            <input type="phone" id="phone8" name="phone8" placeholder="Mixed P" required>
+
+            <!-- Reserve-1 Participant -->
+            <label for="name9">(Reserve-1) Sila masukkan nama penuh:</label>
+            <input type="text" id="name9" name="name9" placeholder="Reserve-1">
+
+            <label for="matrix9">(Reserve-1) Sila masukkan no matrik:</label>
+            <input type="text" id="matrix9" name="matrix9" placeholder="Reserve-1">
+
+            <label for="phone9">(Reserve-1) Sila masukkan no telefon:</label>
+            <input type="phone" id="phone9" name="phone9" placeholder="Reserve-1">
+
+            <!-- Reserve-2 Participant -->
+            <label for="name10">(Reserve-2) Sila masukkan nama penuh:</label>
+            <input type="text" id="name10" name="name10" placeholder="Reserve-2">
+
+            <label for="matrix10">(Reserve-2) Sila masukkan no matrik:</label>
+            <input type="text" id="matrix10" name="matrix10" placeholder="Reserve-2">
+
+            <label for="phone10">(Reserve-2) Sila masukkan no telefon:</label>
+            <input type="phone" id="phone10" name="phone10" placeholder="Reserve-2">
+
+            <!-- File Upload -->
+            <label for="file">Muat naik RESIT PEMBAYARAN YURAN</label>
+            <input type="file" id="fileInput" name="file" required>
+
+            <!--<button type="submit">Daftar - Klik sekali sahaja, tunggu sehingga SUCCESS</button>-->
+            <button type="submit" id="submitBtn" onclick="disableButton()">PENDAFTARAN BELUM DIBUKA</button>
+        </form>
+        <p id="responseMessage" style="display:none; color:green;">Pendaftaran Telah Diterima</p>
+        <img src="QR.jpg" alt="QR" class="image">
+    </div>
+	<div id="messageBanner" style="display:none; background-color: green; color: white; padding: 10px; text-align: center; position: fixed; top: 10px; width: 100%; z-index: 1000;">
+    		<p id="responseMessage">Pendaftaran Telah Diterima</p>
+	</div>
+    <script src="script2.js"></script>
+</body>
+</html>
