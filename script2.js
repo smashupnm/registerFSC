@@ -78,5 +78,5 @@ function disableButton() {
     let button = document.getElementById("submitBtn");
     button.disabled = true; // Disable the button
     button.style.opacity = "0.6"; // Optional: Reduce opacity to show it's disabled
-    button.innerText = "PENDAFTARAN BELUM DIBUKA.."; // Optional: Change text to indicate waiting
+    button.innerText = "PENDAFTARAN TELAH DITUTUP.."; // Optional: Change text to indicate waiting
 }
